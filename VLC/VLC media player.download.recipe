@@ -20,17 +20,30 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>filename</key>
-				<string>%NAME%.dmg</string>
-				<key>url</key>
-				<string>https://softlibre.unizar.es/videolan/vlc/3.0.18/macosx/vlc-3.0.18-universal.dmg</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLDownloader</string>
-		</dict>
-		<dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://www.videolan.org/vlc/download-macosx.html</string>
+                <key>re_pattern</key>
+                <string>href="\/\/get\.videolan\.org\/vlc\/([\d\.]+)\/macosx\/vlc-[\d\.]+-universal\.dmg"</string>
+                <key>result_output_var_name</key>
+                <string>version</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://get.videolan.org/vlc/%version%/macosx/vlc-%version%-universal.dmg</string>
+                <key>filename</key>
+                <string>%NAME%-%version%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
