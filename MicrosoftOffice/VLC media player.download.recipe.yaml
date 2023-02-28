@@ -1,0 +1,63 @@
+Description: |
+  Downloads the latest Microsoft Office 365 SKU-less installer package.
+  Override the PRODUCTID key to:
+  - 525133 for Americas
+  - 532572 for Europe
+  - 532577 for Asia
+  - 871743 for Office 2016
+  - 2009112 for Office365 Business Pro (includes Teams)
+Identifier: com.github.aitorhergon.autopkg.download.MicrosoftOffice
+MinimumVersion: "2.3"
+
+Input:
+  NAME: Microsoft Office Suite
+  DOWNLOADURL: https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%
+  PKG_NAME: MicrosoftOffice365Suite
+  PRODUCTID: "532572"
+
+Process:
+  - Processor: URLDownloader
+    Arguments:
+      filename: "%PKG_NAME%.pkg"
+      url: "%DOWNLOADURL%"
+
+  - Processor: CodeSignatureVerifier
+    Arguments:
+      expected_authority_names:
+        - "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
+        - Developer ID Certification Authority
+        - Apple Root CA
+      input_path: "%pathname%"
+
+  - Processor: EndOfCheckPhaseDescription: |
+  Downloads the latest Microsoft Office 365 SKU-less installer package.
+  Override the PRODUCTID key to:
+  - 525133 for Americas
+  - 532572 for Europe
+  - 532577 for Asia
+  - 871743 for Office 2016
+  - 2009112 for Office365 Business Pro (includes Teams)
+Identifier: com.github.aitorhergon.autopkg.download.MicrosoftOffice
+MinimumVersion: "2.3"
+
+Input:
+  NAME: Microsoft Office Suite
+  DOWNLOADURL: https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%
+  PKG_NAME: MicrosoftOffice365Suite
+  PRODUCTID: "532572"
+
+Process:
+  - Processor: URLDownloader
+    Arguments:
+      filename: "%PKG_NAME%.pkg"
+      url: "%DOWNLOADURL%"
+
+  - Processor: CodeSignatureVerifier
+    Arguments:
+      expected_authority_names:
+        - "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
+        - Developer ID Certification Authority
+        - Apple Root CA
+      input_path: "%pathname%"
+
+  - Processor: EndOfCheckPhase
