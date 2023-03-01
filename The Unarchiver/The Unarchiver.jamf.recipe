@@ -11,7 +11,7 @@
          <key>NAME</key>
          <string>VLC</string>
          <key>CATEGORY</key>
-         <string>Maqueta</string>
+         <string>Software Genérico</string>
          <key>PKG_CATEGORY</key>
          <string>%CATEGORY%</string>
          <key>STOPPROCESSINGIF_PREDICATE</key>
@@ -20,7 +20,7 @@
       <key>MinimumVersion</key>
       <string>2.0.0</string>
       <key>ParentRecipe</key>
-      <string>com.github.autopkg.pkg.VLC</string>
+      <string>com.github.aitorhergon.autopkg.pkg.VLCmediaplayer</string>
       <key>Process</key>
       <array>
          <dict>
