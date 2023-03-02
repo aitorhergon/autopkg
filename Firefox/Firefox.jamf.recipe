@@ -20,7 +20,7 @@
       <key>MinimumVersion</key>
       <string>2.0.0</string>
       <key>ParentRecipe</key>
-      <string>local.install.Firefox</string>
+      <string>com.github.aitorhergon.autopkg.pkg.firefox</string>
       <key>Process</key>
       <array>
          <dict>
