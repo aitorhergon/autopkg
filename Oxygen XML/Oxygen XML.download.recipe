@@ -35,6 +35,8 @@
 			<dict>
 				<key>input_path</key>
 				<string>%pathname%/Oxygen XML Editor/Oxygen XML Editor.app</string>
+				<key>requirement</key>
+				<string>always</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
