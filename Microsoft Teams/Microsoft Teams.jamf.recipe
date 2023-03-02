@@ -14,8 +14,6 @@
          <string>Maqueta</string>
          <key>PKG_CATEGORY</key>
          <string>%CATEGORY%</string>
-         <key>STOPPROCESSINGIF_PREDICATE</key>
-         <string>download_changed == FALSE</string>
       </dict>
       <key>MinimumVersion</key>
       <string>2.0.0</string>
@@ -37,11 +35,7 @@
             <dict>
                <key>replace_pkg</key>
                <string>true</string>
-               <key>predicate</key>
-               <string>%STOPPROCESSINGIF_PREDICATE%</string>
             </dict>
-            <key>Processor</key>
-            <string>StopProcessingIf</string>
          </dict>
          <dict>
             <key>Arguments</key>
