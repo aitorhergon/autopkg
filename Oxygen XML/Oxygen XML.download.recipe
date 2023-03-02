@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of oxygen.</string>
 	<key>Identifier</key>
-	<string>com.github.aitorhergon.autopkg.download.fontbase</string>
+	<string>com.github.aitorhergon.autopkg.download.oxygen</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
