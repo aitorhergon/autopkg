@@ -48,7 +48,7 @@
             <dict>
 
                <key>pkg_name</key>
-               <string>VLC.pkg</string>
+               <string>The Unarchiver.pkg</string>
                <key>pkg_category</key>
                <string>%PKG_CATEGORY%</string>
                <key>pkg_notes</key>
