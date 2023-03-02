@@ -38,8 +38,6 @@
 				<key>requirement</key>
 				<string>certificate leaf[subject.OU] = "ADUZ46XWHJ"</string>
 			</dict>
-			<key>Processor</key>
-			<string>CodeSignatureVerifier</string>
 		</dict>
 	</array>
 </dict>
