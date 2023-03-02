@@ -41,9 +41,6 @@
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
 		</dict>
-
-			<key>Processor</key>
-			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
