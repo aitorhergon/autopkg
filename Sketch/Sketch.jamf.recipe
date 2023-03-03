@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+   <string>com.github.aitorhergon.autopkg.jamf.sketch</string>
+	<key>Input</key>
+	<dict>
+      <key>NAME</key>
+		<string>Sketch</string>
+		<key>CATEGORY</key>
+		<string>Software Genérico</string>
+      <key>PKG_CATEGORY</key>
+      <string>%CATEGORY%</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+   <string>com.github.aitorhergon.autopkg.pkg.sketch</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+            <key>replace_pkg</key>
+            <string>true</string>
+            <key>pkg_name</key>
+            <string>%NAME%.pkg</string>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+            <key>pkg_notes</key>
+            <string>%NAME% %version% subido vía AutoPkg.</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
