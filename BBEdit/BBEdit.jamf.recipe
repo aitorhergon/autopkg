@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-    <string>com.github.autopkg.download.bbedit</string>
+    <string>com.github.autopkg.pkg.bbedit</string>
 	<key>Process</key>
 	<array>
 		<dict>
