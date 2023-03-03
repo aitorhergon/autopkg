@@ -5,11 +5,11 @@
 	<key>Comment</key>
 	<string>Receta para subir el paquete seleccionado a JAMF, reemplazará si ya existe un paquete con el mismo nombre.</string>
 	<key>Identifier</key>
-   <string>com.github.aitorhergon.autopkg.jamf.oxygen</string>
+   <string>com.github.aitorhergon.autopkg.jamf.protopie</string>
 	<key>Input</key>
 	<dict>
       <key>NAME</key>
-		<string>Oxygen XML Editor</string>
+		<string>ProtoPie</string>
 		<key>CATEGORY</key>
 		<string>Software Genérico</string>
       <key>PKG_CATEGORY</key>
@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-   <string>com.github.aitorhergon.autopkg.pkg.oxygen</string>
+   <string>com.github.aitorhergon.autopkg.pkg.protopie</string>
 	<key>Process</key>
 	<array>
 		<dict>

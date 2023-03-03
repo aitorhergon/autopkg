@@ -2,18 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Oxygen XML Editor.</string>
+	<string>Downloads the latest version of ProtoPie media player.</string>
 	<key>Identifier</key>
-	<string>com.github.aitorhergon.autopkg.download.oxygen</string>
+	<string>com.github.aitorhergon.autopkg.download.protopie</string>
 	<key>Input</key>
 	<dict>
 		<key>APP_FILENAME</key>
-		<string>Oxygen XML Editor</string>
+		<string>ProtoPie</string>
 		<key>NAME</key>
-		<string>Oxygen XML Editor</string>
+		<string>ProtoPie</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -25,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://mirror.oxygenxml.com/InstData/Editor/MacOSX/VM/oxygen-openjdk.dmg</string>
+                <string>https://download.protopie.io/darwin/latest</string>
                 <key>filename</key>
                 <string>%NAME%.dmg</string>
             </dict>
@@ -38,9 +36,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%pathname%/Oxygen XML Editor/Oxygen XML Editor.app</string>
+				<string>%pathname%/ProtoPie.app</string>
 				<key>requirement</key>
-				<string>certificate leaf[subject.OU] = "ADUZ46XWHJ"</string>
+				<string>identifier "io.protopie" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "24V7JB28L6"</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
@@ -49,7 +47,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%pathname%/Oxygen XML Editor/Oxygen XML Editor.app/Contents/Info.plist</string>
+				<string>%pathname%/ProtoPie.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
