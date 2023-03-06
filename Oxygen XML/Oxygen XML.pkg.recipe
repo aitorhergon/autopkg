@@ -65,7 +65,7 @@
                             <key>path</key>
                             <string>Applications</string>
                             <key>user</key>
-                            <string>administrador</string>
+                            <string>root</string>
                             <key>group</key>
                             <string>admin</string>
                         </dict>
