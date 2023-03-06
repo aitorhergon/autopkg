@@ -39,7 +39,7 @@
                 <key>source_path</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/%NAME%</string>
                 <key>destination_path</key>
-                <string>%pkgroot%/Applications</string>
+                <string>%pkgroot%/%NAME%/Applications</string>
                 <key>purge_destination</key>
                 <true/>
             </dict>
