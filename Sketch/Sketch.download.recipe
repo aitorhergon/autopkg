@@ -51,7 +51,7 @@
                 <key>url</key>
                 <string>https://download.sketch.com/sketch-%version1%-%version2%.zip</string>
                 <key>filename</key>
-                <string>%NAME%-%version%.zip</string>
+                <string>%NAME%-%version1%-%version2%.zip</string>
             </dict>
         </dict>
         <dict>
