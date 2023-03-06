@@ -47,7 +47,7 @@
                     <key>source_item</key>
                     <string>Oxygen XML Editor</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downloads</string>
+                    <string>%RECIPE_CACHE_DIR%/</string>
                     <key>user</key>
                     <string>root</string>
                     <key>group</key>
