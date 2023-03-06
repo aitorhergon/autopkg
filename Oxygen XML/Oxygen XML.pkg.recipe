@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Downloads the current release</string>
     <key>Identifier</key>
-	<string>com.github.aitorhergon.autopkg.pkg.sketch</string>
+	<string>com.github.aitorhergon.autopkg.pkg.oxygen</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Sketch</string>
+        <string>Oxygen XML Editor</string>
     </dict>
     <key>ParentRecipe</key>
-	<string>com.github.aitorhergon.autopkg.download.sketch</string>
+	<string>com.github.aitorhergon.autopkg.download.oxygen</string>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>Process</key>
@@ -23,25 +23,12 @@
             <key>Arguments</key>
             <dict>
                 <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%</string>
                 <key>pkgdirs</key>
                 <dict>
                     <key>Applications</key>
                     <string>0775</string>
                 </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>Unarchiver</string>
-            <key>Arguments</key>
-            <dict>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%pkgroot%/Applications</string>
-                <key>purge_destination</key>
-                <true/>
             </dict>
         </dict>
         <dict>
@@ -52,7 +39,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%pkgroot%/Applications/Sketch.app/Contents/Info.plist</string>
+                <string>%pkgroot%/Applications/Oxygen XML Editor/Oxygen XML Editor.app/Contents/Info.plist</string>
                 <key>plist_version_key</key>
                 <string>CFBundleShortVersionString</string>
             </dict>
@@ -69,7 +56,7 @@
                     <key>version</key>
                     <string>%version%</string>
                     <key>id</key>
-                    <string>com.bohemiancoding.sketch3</string>
+                    <string>ro.sync.exml.Oxygen</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>chown</key>
@@ -81,8 +68,6 @@
                             <string>administrador</string>
                             <key>group</key>
                             <string>staff</string>
-                            <key>mode</key>
-                            <string>0755</string>
                         </dict>
                     </array>
                 </dict>
