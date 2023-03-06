@@ -40,7 +40,7 @@
             <key>Arguments</key>
             <dict>
                 <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg</string>
+                <string>%pathname%</string>
                 <key>items_to_copy</key>
                 <array>
                   <dict>
@@ -49,9 +49,9 @@
                     <key>destination_path</key>
                     <string>%RECIPE_CACHE_DIR%/downloads</string>
                     <key>user</key>
-                    <string>administrador</string>
+                    <string>root</string>
                     <key>group</key>
-                    <string>staff</string>
+                    <string>wheel</string>
                     <key>mode</key>
                     <string>0755</string>
                   </dict>
