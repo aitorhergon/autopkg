@@ -49,9 +49,9 @@
                     <key>destination_path</key>
                     <string>%RECIPE_CACHE_DIR%/downloads</string>
                     <key>user</key>
-                    <string>root</string>
+                    <string>administrador</string>
                     <key>group</key>
-                    <string>wheel</string>
+                    <string>admin</string>
                     <key>mode</key>
                     <string>0755</string>
                   </dict>
