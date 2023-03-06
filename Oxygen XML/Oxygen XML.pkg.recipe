@@ -38,7 +38,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%/Applications/Oxygen XML Editor/Oxygen XML Editor.app/Contents/Info.plist</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%/Applications/Oxygen XML Editor/Oxygen XML Editor.app/Contents/Info.plist</string>
                 <key>plist_version_key</key>
                 <string>CFBundleShortVersionString</string>
             </dict>
@@ -64,9 +64,11 @@
                             <key>path</key>
                             <string>Applications</string>
                             <key>user</key>
-                            <string>root</string>
+                            <string>administrador</string>
                             <key>group</key>
-                            <string>admin</string>
+                            <string>staff</string>
+                            <key>mode</key>
+                            <string>0755</string>
                         </dict>
                     </array>
                 </dict>
