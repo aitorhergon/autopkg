@@ -47,7 +47,7 @@
                     <key>source_item</key>
                     <string>Oxygen XML Editor</string>
                     <key>destination_path</key>
-                    <string>%RECIPE_CACHE_DIR%/</string>
+                    <string>%RECIPE_CACHE_DIR%/downloads</string>
                     <key>user</key>
                     <string>root</string>
                     <key>group</key>
@@ -62,7 +62,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Oxygen XML Editor.app</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%/Oxygen XML Editor.app</string>
 				<key>requirement</key>
 				<string>always</string>
 			</dict>
@@ -73,7 +73,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Oxygen XML Editor.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%/Oxygen XML Editor.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
