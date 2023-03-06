@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Downloads the current release</string>
     <key>Identifier</key>
-	<string>com.github.aitorhergon.autopkg.pkg.sketch</string>
+	<string>com.github.aitorhergon.autopkg.pkg.craftmanager</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Sketch</string>
+        <string>CraftManager</string>
     </dict>
     <key>ParentRecipe</key>
-	<string>com.github.aitorhergon.autopkg.download.sketch</string>
+	<string>com.github.aitorhergon.autopkg.download.craftmanager</string>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>Process</key>
@@ -52,7 +52,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%pkgroot%/Applications/Sketch.app/Contents/Info.plist</string>
+                <string>%pkgroot%/Applications/CraftManager.app/Contents/Info.plist</string>
                 <key>plist_version_key</key>
                 <string>CFBundleShortVersionString</string>
             </dict>
@@ -69,7 +69,7 @@
                     <key>version</key>
                     <string>%version%</string>
                     <key>id</key>
-                    <string>com.bohemiancoding.sketch3</string>
+                    <string>com.invisionlabs.CraftManager</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>chown</key>
