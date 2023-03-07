@@ -77,7 +77,7 @@
          </dict>
          <dict>
             <key>Processor</key>
-            <string>com.github.aitorhergon.autopkg.processors/DatetimeOutputter.py</string>
+            <string>com.github.aitorhergon.autopkg.Processors/DatetimeOutputter.py</string>
          </dict>
          <dict>
             <key>Processor</key>
