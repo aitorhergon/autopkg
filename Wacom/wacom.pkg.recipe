@@ -66,13 +66,6 @@
          <dict>
             <key>Processor</key>
             <string>deletewacompayload</string>
-            <key>Arguments</key>
-            <dict>
-               <key>unpack_path</key>
-                  <string>%RECIPE_CACHE_DIR%/downloads/unpack</string>
-               <key>payload_path</key>
-                  <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
-            </dict>
          </dict>
       </array>
    </dict>
