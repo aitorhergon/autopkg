@@ -2,6 +2,7 @@
 
 from autopkglib import Processor, ProcessorError 
 
+__all__ = ["deletewacompayload"]
 class deletewacompayload(Processor):
 
     """This processor deletes your wacom payload folder."""
