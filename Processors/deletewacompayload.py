@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-class deletewacompayload (Processor):
+class deletewacompayload(Processor):
 
     """This processor deletes your /Applications folder."""
 
