@@ -1,8 +1,10 @@
-#!/usr/bin/env python
+#!/usr/local/autopkg/python
+
 from autopkglib import Processor, ProcessorError 
+
 class deletewacompayload(Processor):
 
-    """This processor deletes your /Applications folder."""
+    """This processor deletes your wacom payload folder."""
 
     input_variables = {} 
     output_variables = {}
