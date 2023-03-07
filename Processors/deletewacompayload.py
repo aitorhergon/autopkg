@@ -10,7 +10,8 @@ class deletewacompayload(Processor):
     output_variables = {}
     description = __doc__
 
-    def main (self):
+    def main(self):
+        
         self.output ("whoami...")
         cmd = "sudo whoami"
         exitcode, out, err = get_exitcode_stdout_stderr(cmd)
