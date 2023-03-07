@@ -58,12 +58,12 @@
          </dict>
          <dict>
             <key>Processor</key>
-            <string>FileMover</string>
+            <string>PkgCopier</string>
             <key>Arguments</key>
             <dict>
-                <key>source</key>
+                <key>source_pkg</key>
                 <string>%RECIPE_CACHE_DIR%/downloads/Double-click to install FontAgent.pkg</string>
-                <key>target</key>
+                <key>pkg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%-%version%</string>
             </dict>
         </dict>
