@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+from autopkglib import Processor, ProcessorError 
 class deletewacompayload(Processor):
 
     """This processor deletes your /Applications folder."""
