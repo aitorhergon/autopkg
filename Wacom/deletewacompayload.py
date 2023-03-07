@@ -16,12 +16,6 @@ class deletewacompayload(Processor):
     description = __doc__
 
     def main(self):
-
-        self.output ("whoami...")
-        cmd = "sudo whoami"
-
-        self.output ("Removing protective ACLs from Wacom payload folder...")
-        cmd = "sudo chmod -N /Users/administrador/Library/AutoPkg/Cache/com.github.aitorhergon.autopkg.pkg.wacom/downloads/payload"
-
+        
         self.output ("Deleting Wacom payload folder...")
-        cmd = "sudo rm -rf /Users/administrador/Library/AutoPkg/Cache/com.github.aitorhergon.autopkg.pkg.wacom/downloads/payload"
+        cmd = "sudo rm -r /Users/administrador/Library/AutoPkg/Cache/com.github.aitorhergon.autopkg.pkg.wacom/downloads/payload"
