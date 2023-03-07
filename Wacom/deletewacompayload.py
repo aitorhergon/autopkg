@@ -29,10 +29,10 @@ class deletewacompayload(Processor):
         unpack_path = self.env["unpack_path"]
         try:
             self.output ("Deleting Wacom payload folder...")
-            os.system ("sudo rm -r payload_path")
+            os.system ("sudo rm -r {payload_path}")
 
             self.output ("Deleting Wacom unpack folder...")
-            os.system ("sudo rm -r unpack_path")
+            os.system ("sudo rm -r {unpack_path}")
         except Exception as err:
             raise ProcessorError(err)
         
