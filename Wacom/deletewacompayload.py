@@ -25,6 +25,7 @@ class deletewacompayload(Processor):
     description = __doc__
 
     def main(self):
+        payload_path = self.env["payload_path"]
         try:
             self.output ("Deleting Wacom payload folder...")
             os.system ("sudo rm -r self.env['payload_path']")
