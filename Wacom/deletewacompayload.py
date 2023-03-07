@@ -11,27 +11,17 @@ class deletewacompayload(Processor):
 
     """This processor deletes your wacom payload folder."""
 
-    input_variables = {
-            "payload_path": {
-            "required": True,
-            "description": (),
-        },
-            "unpack_path": {
-                "required": True,
-                "description": (),
-        },
-        } 
+    input_variables = {} 
     output_variables = {}
     description = __doc__
 
     def main(self):
-        payload_path = self.env["payload_path"]
         try:
             self.output ("Deleting Wacom payload folder...")
-            os.system ("sudo rm -r self.env['payload_path']")
+            os.system ("sudo rm -r /Users/administrador/Library/AutoPkg/Cache/local.jamf.wacom/downloads/payload")
 
             self.output ("Deleting Wacom unpack folder...")
-            os.system ("sudo rm -r {unpack_path}")
+            os.system ("sudo rm -r /Users/administrador/Library/AutoPkg/Cache/local.jamf.wacom/downloads/unpack")
         except Exception as err:
             raise ProcessorError(err)
         
