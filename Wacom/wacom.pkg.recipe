@@ -77,7 +77,7 @@
          </dict>
          <dict>
             <key>Processor</key>
-            <string>com.github.aitorhergon.autopkg.processors/deletewacompayload</string>
+            <string>com.github.aitorhergon.processors/deletewacompayload</string>
          </dict>
       </array>
    </dict>
