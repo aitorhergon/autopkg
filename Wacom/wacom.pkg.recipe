@@ -77,6 +77,10 @@
          </dict>
          <dict>
             <key>Processor</key>
+            <string>com.github.aitorhergon.autopkg.processors/DatetimeOutputter.py</string>
+         </dict>
+         <dict>
+            <key>Processor</key>
             <string>com.github.aitorhergon.autopkg.processors/deletewacompayload</string>
          </dict>
       </array>
