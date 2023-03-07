@@ -27,7 +27,7 @@ class deletewacompayload(Processor):
     def main(self):
         try:
             self.output ("Deleting Wacom payload folder...")
-            os.system ("sudo rm -r {}".format(input_variables.get("payload_path")))
+            os.system ("sudo rm -r {}".format(self.input_variables.get("payload_path")))
 
             self.output ("Deleting Wacom unpack folder...")
             os.system ("sudo rm -r {unpack_path}")
