@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ -d "$3/Applications/Oxygen XML Editor/" ]; then
+   rm -rf "$3/Applications/Oxygen XML Editor/"
+fi
