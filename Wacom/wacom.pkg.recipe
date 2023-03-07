@@ -65,16 +65,14 @@
         </dict>
          <dict>
             <key>Processor</key>
-            <string>PathDeleter</string>
+            <string>deletewacompayload</string>
             <key>Arguments</key>
             <dict>
-               <key>path_list</key>
+               <key>unpack_path</key>
                   <string>%RECIPE_CACHE_DIR%/downloads/unpack</string>
+               <key>payload_path</key>
+                  <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
             </dict>
-         </dict>
-         <dict>
-            <key>Processor</key>
-            <string>deletewacompayload</string>
          </dict>
       </array>
    </dict>

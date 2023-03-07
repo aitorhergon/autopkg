@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-   <string>com.github.aitorhergon.autopkg.jamf.sourcetree</string>
+   <string>com.github.aitorhergon.autopkg.jamf.wacom</string>
 	<key>Input</key>
 	<dict>
       <key>NAME</key>
-		<string>Sourcetree</string>
+		<string>Wacom</string>
 		<key>CATEGORY</key>
 		<string>Software Genérico</string>
       <key>PKG_CATEGORY</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-   <string>com.github.aitorhergon.autopkg.pkg.sourcetree</string>
+   <string>com.github.aitorhergon.autopkg.pkg.wacom</string>
 	<key>Process</key>
 	<array>
 		<dict>
