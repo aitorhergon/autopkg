@@ -1,0 +1,21 @@
+Description: Upload to JAMF
+ParentRecipe: com.github.aitorhergon.autopkg.pkg.office
+MinimumVersion: "2.3"
+
+Input:
+  NAME: Microsoft Office 365
+  CATEGORY: Maqueta
+	PKG_CATEGORY: "%CATEGORY%"
+
+Process:
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
+    Arguments:
+    category_name: "%CATEGORY%"
+
+  - Processor: com.github.grahampugh.jamf-upload.processors/JamfPackageUploader
+    Arguments:
+      replace_pkg: "true"
+			pkg_name: "%NAME%.pkg"
+			pkg_category: "%CATEGORY%"
+			pkg_notes: "%NAME% %version% subido vía AutoPkg."
+			pkg_path: "Microsoft Office 365.zip"
