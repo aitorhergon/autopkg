@@ -18,7 +18,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-   <string>com.github.autopkg.pkg.Cyberduck</string>
+   <string>com.github.rtrouton.pkg.Cyberduck</string>
 	<key>Process</key>
 	<array>
 		<dict>
